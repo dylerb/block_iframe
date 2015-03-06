@@ -1,9 +1,10 @@
 <?php
 /**
- * @Project NUKEVIET 4.0
- * @Author VINADES.,JSC (contact@vinades.vn)
- * @Copyright (C) 2010 VINADES., JSC. All rights reserved
+ * @Project NUKEVIET 4
+ * @Author ConVoi (convoi@gmail.com)
+ * @Copyright (C) 2015 HienTuong Web & Net. All rights reserved
  * @Createdate 3/9/2010 23:25
+ * @Credits: hoaquynhtim99
  */
 
 if ( ! defined( 'NV_MAINFILE' ) ) die( 'Stop!!!' );
@@ -70,5 +71,4 @@ if ( defined( 'NV_SYSTEM' ) )
 {
     $content = nv_iframe_blocks( $block_config );
 }
-
 ?>
