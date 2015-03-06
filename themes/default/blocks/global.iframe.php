@@ -44,11 +44,11 @@ if ( ! nv_function_exists( 'nv_iframe_blocks' ) )
     {
         global $global_config, $site_mods;
 
-        if( file_exists( NV_ROOTDIR . '/themes/' . $global_config['module_theme'] . '/blocks/global.block_iframe.tpl' ) )
+        if( file_exists( NV_ROOTDIR . '/themes/' . $global_config['module_theme'] . '/blocks/global.iframe.tpl' ) )
         {
             $block_theme = $global_config['module_theme'];
         }
-        elseif( file_exists( NV_ROOTDIR . '/themes/' . $global_config['site_theme'] . '/blocks/global.block_iframe.tpl' ) )
+        elseif( file_exists( NV_ROOTDIR . '/themes/' . $global_config['site_theme'] . '/blocks/global.iframe.tpl' ) )
         {
             $block_theme = $global_config['site_theme'];
         }
@@ -57,7 +57,7 @@ if ( ! nv_function_exists( 'nv_iframe_blocks' ) )
             $block_theme = 'default';
         }
 
-        $xtpl = new XTemplate( 'global.block_iframe.tpl', NV_ROOTDIR . '/themes/' . $block_theme . '/blocks' );
+        $xtpl = new XTemplate( 'global.iframe.tpl', NV_ROOTDIR . '/themes/' . $block_theme . '/blocks' );
         $xtpl->assign( 'NV_BASE_SITEURL', NV_BASE_SITEURL );
         $xtpl->assign( 'BLOCK_THEME', $block_theme );
         $xtpl->assign( 'DATA', $block_config );
